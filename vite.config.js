@@ -5,5 +5,5 @@ import svgr from "vite-plugin-svgr";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), svgr()],
-  base: "https://github.com/Yardenhe/React-Intro.git",
+  base: "./Yardenhe/React-Intro",
 });
