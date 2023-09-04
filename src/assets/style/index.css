@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0.5em 0 0.5em;
+  font-family: "Edu VIC WA NT Beginner", cursive;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+/* Dont stretch my Media */
+img,
+embed,
+video,
+object {
+  max-width: 100%;
+}
+
+/* Simple and useful CSS Debugging Technique */
+.debug * {
+  outline: 1px solid gold;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  background-color: #e91e63;
+  justify-content: space-between;
+  color: white;
+}
+
+.container {
+  padding-inline: 8vw;
+}
+
+.simple-counter {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.simple-counter h2 {
+  margin-top: 0;
+}
+
+.btns {
+  display: flex;
+  gap: 10px;
+}
+
+.dark {
+  background-color: #595959;
+  color: white;
+}
+table {
+  border: 1px solid #080707;
+  margin: 10px;
+}
+th {
+  background-color: #080000;
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #0c0101;
+}
+td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #0d0909;
+}
+td.red {
+  color: red;
+}
+.season-clock {
+  background-color: #a0ece4;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+.season-clock.dark {
+  background-color: #083294;
+}
+.watcher-container {
+  background-color: rgb(192, 161, 190);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 200px;
+}
+
+.watcher-box {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  background-color: #f0f0f0;
+  display: inline-block;
+  text-align: center;
+}
+.img-watcher {
+  width: 150px;
+  height: 200px;
+}
+.modal {
+  background-color: rgba(255, 0, 0, 0.9);
+  position: absolute;
+  padding: 10px;
+  height: 200px;
+  min-width: 500px;
+  text-align: center;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.modal input,
+button {
+  display: block;
+  margin: 5px;
+}
+.mouse-container {
+  background-color: black;
+  color: white;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1000;
+}
