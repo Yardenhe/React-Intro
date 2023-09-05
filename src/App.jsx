@@ -15,7 +15,6 @@ const animalInfos = [
 export function App() {
   const [page, setPage] = useState("Animals");
 
-  
   function onSetPage(ev, page) {
     ev.preventDefault();
     setPage(page);
@@ -24,7 +23,7 @@ export function App() {
   return (
     <section className="main-app">
       <header className="container">
-        <h1>Rare Animals</h1>
+        <h1>Rare Animalsssss</h1>
         <nav>
           <a href="" onClick={(ev) => onSetPage(ev, "Animals")}>
             Animals

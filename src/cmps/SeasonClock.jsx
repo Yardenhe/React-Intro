@@ -21,9 +21,7 @@ export function SeasonClock(props) {
   const day = utilService.getDayName(date);
   const season = getSeason(date);
   const imageSrc = `/img/${season}.png`;
-
   const [clock, setClock] = useState(new Date().getTime());
-
   const intervalIdRef = useRef();
 
   useEffect(() => {
